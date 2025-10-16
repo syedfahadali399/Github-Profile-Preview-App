@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Viewer App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <main class="main">
+    <section class="section" id="section">
+        <h1 class="para">GitHub Profile Viewer</h1>
+    
+        <form id="form" class="search-box">
+          <input class="input" type="text" id="username" placeholder="Enter GitHub username..." required>
+          <button id="sreach" type="submit">Search</button>
+          <button id="reset" type="reset">Reset</button>
+        </form>
+
+        <div class="theme-toggle">
+          <label class="text" for="mode">Dark Mode</label>
+          <input class="checkbox" type="checkbox" id="mode">
+        </div>
+    
+        <div class="profile-card">
+          <div class="profile-header">
+            <div class="img-header">
+              <img class="profile-pic" id="user-profile" src="" alt="User Avatar">
+            </div>
+            <div class="profile-info">
+              <h1 class="small-para" id="user-name"></h1>
+              <p class="profile-design-2" id="actual-user-name"></p>
+              <p class="profile-design-2" id="user-bio"></p>
+              <a class="profile-design-1" id="github-profile-link" href="" target="_blank">User GitHub Profile Link</a>
+            </div>
+          </div>
+
+          <div id="user-doesnot-exist"></div>
+    
+          <div class="profile-stats">
+            <div class="profile-design"><span>Followers:</span><strong id="user-followers">0</strong></div>
+            <div class="profile-design"><span>Following:</span><strong id="user-following">0</strong></div>
+            <div class="profile-design"><span>Repos:</span><strong id="user-repos-num">0</strong></div>
+          </div>
+    
+          <div class="profile-links">
+            <p class="profile-design">Location: <span id="user-location"></span></p>
+            <p class="profile-design">Company: <span id="user-company"></span></p>
+            <p class="profile-design">Blog: <a class="link" href="" id="user-blog" target="_blank"></a></p>
+            <p class="profile-design">Email: <span id="user-email"></span></p>
+          </div>
+        </div>
+    </section>
+  </main>
+  <script src="java.js"></script>
+</body>
+</html>
